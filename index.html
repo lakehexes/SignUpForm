@@ -1,13 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" >
-</head>
-<body>
-    <h1>Hello</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="logo">
+      <div class="innerLogo">
+        <img src="images/logo.png" alt="Project logo of Odin" />
+        <div>Odin</div>
+      </div>
+      <div class="footer">Photo by Halie West on Unsplash</div>
+    </div>
+    <div class="signUpContainer">
+        <div class="blurb"><p class="text">Take your coding skills to the next level with this open source, self-paced course.</p><p class="text">Sign up now to get started</p></div>
+        <div class="highlight">
+        <div class = "inputLayout inputText">Lets do this!</div>
+      <form action="/handleForm" method="post">
+        <ul class="formContainer">
+          <div class="inputLayout name">
+          <li>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" />
+          </li>
+          <li><label for="secondName">Second Name:</label>
+            <input type="text" id="secondName" name="secondName" /></li>
+          </div>
+          <div class="inputLayout details">
+          <li>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" />
+          </li>
+          <li><label for="phoneNumber">Phone Number:</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" /></li>
+          </div>
+          <div class="inputLayout  password">
+          <li><label for=""pwd>Password:</label>
+            <input type="password" id="pwd" name="pwd" /></li>
+          <li><label for="pwd2">Confirm Password:</label>
+            <input type="password" id="pwd2" name="pwd2" /></li>
+          </div>
+          </ul>
+
+    </div>
+    <div class="createAccount">
+        <button type="submit">Create Account</button>
+      </form>
+      <div class="text">Already have an account? Log in</div>
+    </div>
+</div>
+  </body>
 </html>

@@ -1,3 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
 body {
-    color: purple;
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+
+:root {
+    --left-side-width: 40vw;
+    --right-side-width: calc(100vw - var(--left-side-width));
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex; 
+}
+
+div.logo {
+  background-image: url(images/ferns.jpg);
+  width: var(--left-side-width);
+  height: 100vh;
+  background-repeat: no-repeat;
+  color: white;
+  font-size: larger;
+  display: flex;
+  align-items: spaced-evenly;
+  justify-content: center;
+
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+div.innerLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  background-color: black;
+  opacity: 0.65;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  top: 20%;
+}
+
+div.footer {
+  padding: 5px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  font-size: xx-small;
+  text-align: center;
+  width: 100%;
+}
+
+img[src*="logo"] {
+  width: 50px;
+}
+
+div.signUpContainer {
+    background-color: #E5E7EB;
+    width: var(--right-side-width);
+  height: 100vh;
+}
+
+div.highlight {
+    background-color: white;
+    padding: 10px;
+}
+
+.blurb, .createAccount {
+    padding: 10px;
+    margin: 10px;
+}
+
+.blurb {
+  margin-top: min(5vw, 10vh);
+
+}
+
+.formContainer{
+  display:flex;
+  justify-content: left;
+  flex-direction: column;
+}
+
+li, .inputText {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  background-color:#596D48;
+  border: none;
+  padding: 5px;
+  border-radius: 25px;
+}
+
+.inputLayout {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.text {
+  margin-top: 10px;
+}
+
+input {
+  border: solid #E5E7EB 1px;
 }
